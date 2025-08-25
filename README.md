@@ -1,6 +1,6 @@
 ## 🌐 Live Demo
 
-## 👉 (https://salesprediction12.streamlit.app/)
+## 👉 https://salesprediction12.streamlit.app/
 
 
 # 📊 Sales Prediction App
