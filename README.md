@@ -1,25 +1,26 @@
 # 📊 Sales Prediction App
 
-This project predicts **sales (in thousands)** based on advertising spend across three channels: **TV, Radio, and Social Media**.  
-It is built with **Python (Scikit-Learn, Ridge Regression)** and deployed as an interactive web app using **Streamlit**.
+A machine learning web application that predicts **sales (in thousands)** based on advertising spend across **TV, Radio, and Social Media** channels.  
+Built with **Scikit-Learn (Ridge Regression)** and deployed using **Streamlit**.
 
 ---
 
-## 🚀 Features
-- Upload or input advertising spend values
-- Predict sales instantly
-- Interactive Streamlit UI
+## ✨ Key Features
+- Predicts sales based on advertising spend inputs
+- Interactive **Streamlit UI**
 - Pre-trained **Ridge Regression** model
 - Scaled inputs using **StandardScaler**
+- Fast and lightweight deployment
 
 ---
 
-## 📂 Project Files
+## 📂 Repository Structure
 ├── advertising_linear_150.csv # Dataset
-├── model.pkl # Trained ML model
-├── scaler.pkl # Feature scaler
+├── model.pkl # Trained Ridge Regression model
+├── scaler.pkl # StandardScaler for features
 ├── app.py # Streamlit application
-├── README.md # Project documentation
+├── requirements.txt # Project dependencies
+└── README.md # Documentation
 
 yaml
 Copy
@@ -27,13 +28,13 @@ Edit
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/sales-prediction-app.git
 cd sales-prediction-app
-2. Create Virtual Environment (Optional but Recommended)
+2. (Optional) Create Virtual Environment
 bash
 Copy
 Edit
@@ -45,77 +46,72 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
-4. Run the App
+4. Run the Application
 bash
 Copy
 Edit
 streamlit run app.py
-📊 Model Training Workflow
+🧠 Model Workflow
 Data Preprocessing
 
-Checked for null values & duplicates
+Checked missing values & duplicates
 
-Outlier detection using boxplots
+Outlier detection with boxplots
 
 Correlation analysis with heatmap
 
-Feature Scaling
+Feature Engineering
 
-Applied StandardScaler to ensure balanced feature input
+Scaled features using StandardScaler
 
-Model
+Model Training
 
-Used Ridge Regression for robust linear modeling
+Algorithm: Ridge Regression
 
-Split dataset into 80% training & 20% testing
+Split: 80% training / 20% testing
 
 Model Saving
 
-Saved trained model & scaler using pickle
+Stored trained model (model.pkl) and scaler (scaler.pkl) with pickle
 
-Example code:
+Example usage:
 
 python
 Copy
 Edit
 import pickle, numpy as np
 
-# Load model and scaler
+# Load model & scaler
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
-# Predict sales for sample input
+# Sample input: [TV Spend, Radio Spend, Social Media Spend]
 features = np.array([[94, 40, 23]])
 features_scaled = scaler.transform(features)
+
+# Predict
 prediction = model.predict(features_scaled)
 print(f"Predicted Sales: {prediction[0]:.2f}k")
 🌐 Live Demo
-https://salesprediction12.streamlit.app/
-
-<img width="1916" height="930" alt="Screenshot 2025-08-25 001016" src="https://github.com/user-attachments/assets/f492c090-ebde-499b-ac69-22a48e40d106" />
+👉 🚀 Try the Sales Prediction App Here
 
 📸 App Preview
-Enter TV Spend, Radio Spend, Social Media Spend
 
-Click Predict Sales
-
-Get predicted sales instantly
-
-(Add a screenshot here if available)
+(Replace the placeholder with your actual screenshot — e.g., assets/app_preview.png if added to repo)
 
 🛠️ Tech Stack
-Python 3
+Python 3.9+
 
-Pandas, NumPy – Data handling
+NumPy, Pandas → Data Processing
 
-Seaborn, Matplotlib – Visualization
+Seaborn, Matplotlib → Visualization
 
-Scikit-Learn – Ridge Regression & Scaling
+Scikit-Learn → ML Model (Ridge Regression)
 
-Streamlit – Web App
+Streamlit → Web App Deployment
 
-Pickle – Model persistence
+Pickle → Model Persistence
 
 🤝 Contributing
-Contributions are welcome!
-Feel free to fork this repo and submit pull requests to improve the app.
+Contributions are welcome! 🚀
+If you’d like to improve this project, fork the repo, create a feature branch, and submit a pull request.
