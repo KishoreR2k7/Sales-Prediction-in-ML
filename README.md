@@ -15,6 +15,8 @@ Built with **Scikit-Learn (Ridge Regression)** and deployed using **Streamlit**.
 ---
 
 ## 📂 Repository Structure
+
+
 ├── advertising_linear_150.csv # Dataset
 ├── model.pkl # Trained Ridge Regression model
 ├── scaler.pkl # StandardScaler for features
@@ -22,22 +24,16 @@ Built with **Scikit-Learn (Ridge Regression)** and deployed using **Streamlit**.
 ├── requirements.txt # Project dependencies
 └── README.md # Documentation
 
-yaml
-Copy
-Edit
 
----
 
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
-```bash
+
+```
 git clone https://github.com/your-username/sales-prediction-app.git
 cd sales-prediction-app
-2. (Optional) Create Virtual Environment
-bash
-Copy
-Edit
+2. (Optional) Create Virtual Environment 
 python -m venv venv
 source venv/bin/activate   # On Mac/Linux
 venv\Scripts\activate      # On Windows
@@ -47,9 +43,8 @@ Copy
 Edit
 pip install -r requirements.txt
 4. Run the Application
-bash
-Copy
-Edit
+```
+
 streamlit run app.py
 🧠 Model Workflow
 Data Preprocessing
@@ -75,10 +70,8 @@ Model Saving
 Stored trained model (model.pkl) and scaler (scaler.pkl) with pickle
 
 Example usage:
-
+```
 python
-Copy
-Edit
 import pickle, numpy as np
 
 # Load model & scaler
@@ -92,10 +85,16 @@ features_scaled = scaler.transform(features)
 # Predict
 prediction = model.predict(features_scaled)
 print(f"Predicted Sales: {prediction[0]:.2f}k")
-🌐 Live Demo
-👉 🚀 Try the Sales Prediction App Here
 
-📸 App Preview
+```
+🌐 Live Demo
+<p align="center">
+  <a href="https://salesprediction12.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Launch%20App-Streamlit-brightgreen?style=for-the-badge&logo=streamlit" alt="Launch App">
+  </a>
+</p>
+
+---📸 App Preview
 
 (Replace the placeholder with your actual screenshot — e.g., assets/app_preview.png if added to repo)
 
