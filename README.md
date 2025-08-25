@@ -88,11 +88,14 @@ print(f"Predicted Sales: {prediction[0]:.2f}k")
 
 ```
 🌐 Live Demo
-<p align="center">
-  <a href="https://salesprediction12.streamlit.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20Launch%20App-Streamlit-brightgreen?style=for-the-badge&logo=streamlit" alt="Launch App">
-  </a>
-</p>
+## 🌐 Live Demo
+
+👉 [Click here to try the Sales Prediction App](https://salesprediction12.streamlit.app/)
+
+
+ ##App Model:
+ <img width="1916" height="930" alt="Screenshot 2025-08-25 001016" src="https://github.com/user-attachments/assets/113d3003-8749-4672-9b6e-f2a6a380a145" />
+
 
 ---📸 App Preview
 
