@@ -102,11 +102,6 @@ prediction = model.predict(features_scaled)
 print(f"Predicted Sales: {prediction[0]:.2f}k")
 
 ```
-## 🌐 Live Demo
-
-👉 [Click here to try the Sales Prediction App](https://salesprediction12.streamlit.app/)
-
-
  ## App Model:
 
  
