@@ -18,10 +18,20 @@ Built with **Scikit-Learn (Ridge Regression)** and deployed using **Streamlit**.
 
 
 ├── advertising_linear_150.csv # Dataset
+
+
 ├── model.pkl # Trained Ridge Regression model
+
+
 ├── scaler.pkl # StandardScaler for features
+
+
 ├── app.py # Streamlit application
+
+
 ├── requirements.txt # Project dependencies
+
+
 └── README.md # Documentation
 
 
