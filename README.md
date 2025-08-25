@@ -1,3 +1,8 @@
+## 🌐 Live Demo
+
+## 👉 [Click here to try the Sales Prediction App](https://salesprediction12.streamlit.app/)
+
+
 # 📊 Sales Prediction App
 
 A machine learning web application that predicts **sales (in thousands)** based on advertising spend across **TV, Radio, and Social Media** channels.  
@@ -97,7 +102,6 @@ prediction = model.predict(features_scaled)
 print(f"Predicted Sales: {prediction[0]:.2f}k")
 
 ```
-🌐 Live Demo
 ## 🌐 Live Demo
 
 👉 [Click here to try the Sales Prediction App](https://salesprediction12.streamlit.app/)
